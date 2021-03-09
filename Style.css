@@ -1,0 +1,560 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #f5f5f5;
+}
+
+/* header styles */
+
+.header-home {
+  position: fixed;
+  display: flex;
+  padding: 0.6rem 1.4rem;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.98);
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.header-home img{
+  height: 35px;
+}
+
+.navbar ul {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.logo-home {
+  display: inline-block;
+  height: 3rem;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: flex-end;
+  width: calc(100% - 80px);
+}
+
+
+.navbar ul > li {
+  display: inline-block;
+  margin: 0 1rem;
+}
+
+.navbar a {
+  color: black;
+  text-decoration: none;
+  font-size: 1.2rem;
+  padding: 0.2rem 0;
+  cursor: pointer;
+}
+
+.navbar ul > li:hover {
+  opacity: 0.4;
+  transition: 0.2s ease-in;
+}
+
+
+.products-menu {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 70px;
+  background-color: #4F3AB7;
+}
+
+.products-menu ul {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 150px;
+  padding-right: 200px;
+}
+
+.products-menu ul + ul {
+  width: 20%;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 150px;
+  margin: 0;
+}
+
+.products-menu ul > li {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.products-menu ul > li a {
+  color: white;
+  text-decoration: none;
+  font-size: 0.8rem;
+  padding: 0.2rem 0;
+}
+
+.secondary-nav__item a:hover,
+.secondary-nav__item a:active {
+  color: rgb(176, 167, 222);
+  transition: 0.3s ease-in-out;
+}
+
+a.login-button {
+  border: solid 1px rgba(0, 0, 0, 0.3);
+  padding: 8px 20px;
+  border-radius: 20px;
+}
+
+.products-menu ul + ul img {
+  height: auto;
+  width: fit-content;
+}
+
+img.cart-icon {
+  height: 20px;
+  margin: 0;
+  margin-right: 10px;
+}
+
+/* Main Styles */
+
+main a:hover {
+  color: #4F3AB7;
+  transition: 0.3s ease-in-out;
+}
+
+div.main-body {
+  display: flex;
+  width: 100%;
+  padding-top: 50px;
+}
+
+section.main {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  padding-left: 150px;
+}
+
+/* Aside Tutoriais style */
+
+.tutoriais {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 250px;
+  height: auto;
+}
+
+.tutorial-content {
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  height: auto;
+  border-radius: 3px;
+  box-shadow: 0 4px 9px 0 rgb(67 65 79 / 10%);
+  align-items: flex-start;
+  margin: 0;
+}
+
+.tutoriais a {
+  text-decoration: none;
+  color: rgb(70, 50, 174);
+  font-weight: 700;
+}
+
+.tutoriais div {
+  width: 250px;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+
+.tutoriais div img {
+  border: 0;
+  padding: 0;
+  width: 250px;
+}
+
+.tutoriais h5 {
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  height: auto;
+  align-items: flex-start;
+}
+
+.tutorial-content p {
+  padding: 10px;
+}
+
+.tutorial-content a:nth-last-of-type(1) {
+  font-size: 1rem;
+}
+
+.tutorial-content a:hover,
+.tutorial-content a:active {
+  color: rgb(39, 24, 98);
+  transition: 0.3s ease-in-out;
+}
+
+
+div.main-img {
+  display: flex;
+}
+
+div.main-img img {
+  border: 0;
+  padding: 0;
+  height: 430px;
+}
+
+.social-media {
+  display: flex;
+}
+
+.main-article {
+  border-radius: 3px;
+  box-shadow: 0 4px 9px 0 rgb(67 65 79 / 10%);
+  padding: 50px 50px 100px;
+}
+
+.main-article {
+  display: flex;
+  flex-direction: column;
+}
+
+.img-main-article {
+  height: 20px;
+  opacity: 0.5;
+}
+
+.video-github{
+  height: 360px;
+  width: auto;
+}
+
+.main-article-title {
+  display: flex;
+  align-items: flex-end;
+}
+
+.main-content {
+  display: flex;
+  width: 100%;
+}
+
+.social-media {
+  position: sticky;
+  height: fit-content;
+  top: 105px;
+  display: flex;
+  flex-direction: column;
+  width: 7%;
+  margin-top: 20px;
+}
+
+.social-media img {
+  margin: 15px 0;
+}
+
+div.sidebar-ad {
+  position: sticky;
+  height: auto;
+  top: 120px;
+  margin-bottom: 0;
+}
+
+div.article-area {
+  display: flex;
+  flex-direction: column;
+  width: 85%;
+  margin-right: 7%;
+}
+
+.main-article a {
+  text-decoration: none;
+  color: rgb(70, 50, 174);
+  font-weight: 700;
+}
+
+.main-article h1 {
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+.main-article h2 {
+  font-size: 2.8rem;
+  font-weight: 600;
+}
+
+.main-article h3 {
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.main-article h5 {
+  color: rgba(0, 0, 0, 0.5);
+  font-weight: 400;
+  font-size: 1rem;
+  align-items: flex-end;
+  display: flex;
+}
+
+.main-article > h5 > a {
+  padding: 0 5px;
+}
+
+.main-article > h5 span {
+  display: flex;
+  padding: 0 5px;
+}
+
+.main-article p {
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 2rem;
+}
+
+.quick-access p {
+  text-align: center;
+}
+
+ul {
+  list-style: none;
+}
+
+
+/* O Autor styles */
+
+.writer {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  border-radius: 3px;
+  box-shadow: 0 4px 9px 0 rgb(67 65 79 / 10%);
+}
+
+.writer__content {
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+}
+
+.writer h2 {
+  margin: 0 70% 0 0;
+}
+
+.writer span {
+  font-weight: 300;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.writer img {
+  height: 80px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.writer a {
+  text-decoration: none;
+  color: rgb(70, 50, 174);
+  font-weight: 700;
+}
+
+/* Tutoriais relacionados style */
+
+.related-tutorials {
+  display: flex;
+  flex-direction: column;
+  margin: 100px 150px;
+}
+
+.related-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-bottom: 10px;
+}
+
+.related-content {
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  height: auto;
+  border-radius: 3px;
+  box-shadow: 0 4px 9px 0 rgb(67 65 79 / 10%);
+}
+
+.related-content img {
+  height: 200px;
+}
+
+.related-tutorials a {
+  text-decoration: none;
+  color: rgb(70, 50, 174);
+  font-weight: 500;
+}
+
+.related-content p {
+  color: #999999;
+  padding: 0 13px;
+}
+
+.related-content h4 {
+  color: rgb(45, 29, 101);
+  padding: 0 13px;
+  margin: 0 0 40px 0;
+  line-height: 1.5rem;
+}
+
+a.link_style {
+  padding: 0 13px;
+  font-size: 1.2rem;
+}
+
+
+/* Banner Footer Styles  */
+
+.banner-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  background: url(https://www.hostinger.com.br/tutoriais/wp-content/themes/tutorialstheme/public/images/bg-blog.svg)
+  no-repeat center;
+}
+
+.banner-content {
+  display: flex;
+  align-items: center;
+  height: 70px;
+  margin: 80px 0 10px 0;
+}
+
+.banner-content strong {
+  font-size: 2.5rem;
+  color: white;
+}
+
+.button-start {
+  display: flex;
+  align-items: center;
+  height: 70px;
+  margin: 10px 0 80px 0;
+}
+
+.button-start a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 500;
+  background-color: #ff4546;
+  border: 1px solid #ff4546;
+  border-radius: 3px;
+  padding: 15px 120px;
+  transition: 0.3s ease-in-out;
+}
+
+.button-start a:hover,
+.button-start a:active {
+  color: white;
+  background-color: red;
+}
+
+
+/* Footer Styles */
+
+footer {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  margin-top: 50px;
+  padding: 0 150px;
+  background: #f4f5ff;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: row;
+  height: 90%;
+  width: 100%;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+  margin-right: 20px;
+}
+
+.footer-content p {
+  color: rgb(40, 23, 102);
+  font-size: 0.9rem;
+  font-weight: 300;
+}
+
+.footer-content div {
+  padding: 10px 0;
+}
+
+.footer-social-media img {
+  height: 25px;
+}
+
+.footer-payments img {
+  width: 50px;
+}
+
+.footer-payments u {
+  color: rgb(40, 23, 102);
+  font-size: 0.6rem;
+  font-weight: 300;
+}
+
+.footer-links-services {
+  display: flex;
+  flex-direction: row;
+  width: 65%;
+  justify-content: space-between;
+  margin-left: 20px;
+}
+
+.footer-links-services h6 {
+  color: rgb(40, 23, 102);
+  font-weight: 700;
+}
+
+.footer-columns {
+  position: sticky;
+  display: flex;
+  height: fit-content;
+  top: 65px;
+  background-color: #f4f5ff;
+}
+
+footer a {
+  text-decoration: none;
+  color: initial;
+}
+
+footer ul {
+  padding: 0;
+  font-size: 0.9rem;
+  font-weight: 300;
+  line-height: 2rem;
+}
